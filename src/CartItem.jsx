@@ -63,12 +63,6 @@ const CartItem = ({ onContinueShopping }) => {
   </div>
 </div>
 
-
-
-
-
-
-
       <div className="cart-items">
         {cart.length === 0 ? (
           <div className="empty-cart">
