@@ -47,21 +47,21 @@ const CartItem = ({ onContinueShopping }) => {
 
   return (
     <div className="cart-container">
-      <div className="p-6">
-  <div className="cart-header border p-10 rounded-4xl w-fit mb-10 shadow-xl flex flex-col justify-around items-center">
-    <h2 className="text-green-600 font-semibold text-xl">
-      Shopping Cart
-    </h2>
-    <div className="cart-summary bg-gray-100 mt-4 px-6 py-4 rounded-xl">
-      <div className="text-gray-700">
-        Total Items: {cart.reduce((sum, item) => sum + item.quantity, 0)}
+      <div className=" flex justify-center ">
+        <div className="rounded-4xl w-fit shadow-xl flex flex-col justify-around items-center z-50">
+          <h2 className=" text-green-600 font-semibold text-xl">
+            Shopping Cart
+          </h2>
+          <div className="cart-summary bg-gray-100 rounded-xl font-semibold">
+            <div className=" text-gray-900">
+              Total Items: {cart.reduce((sum, item) => sum + item.quantity, 0)}
+            </div>
+            <div className="cart-total text-gray-900 font-semibold">
+              Total Amount: ${calculateTotalAmount()}
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="cart-total text-gray-900 font-semibold">
-        Total Amount: ${calculateTotalAmount()}
-      </div>
-    </div>
-  </div>
-</div>
 
       <div className="cart-items">
         {cart.length === 0 ? (
@@ -78,16 +78,16 @@ const CartItem = ({ onContinueShopping }) => {
                 <div className="cart-item-cost">{item.cost}</div>
                 <div className="cart-item-controls">
                   <div className="cart-item-quantity">
-                    <button 
-                      className="cart-item-button" 
+                    <button
+                      className="cart-item-button"
                       onClick={() => handleDecrement(item)}
                       aria-label="Decrease quantity"
                     >
                       −
                     </button>
                     <span className="cart-item-quantity-value">{item.quantity}</span>
-                    <button 
-                      className="cart-item-button" 
+                    <button
+                      className="cart-item-button"
                       onClick={() => handleIncrement(item)}
                       aria-label="Increase quantity"
                     >
@@ -97,8 +97,8 @@ const CartItem = ({ onContinueShopping }) => {
                   <div className="cart-item-total">
                     Total: ${calculateTotalCost(item)}
                   </div>
-                  <button 
-                    className="cart-item-delete" 
+                  <button
+                    className="cart-item-delete"
                     onClick={() => handleRemove(item)}
                     aria-label="Remove item"
                   >

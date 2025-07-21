@@ -11,7 +11,7 @@ function App() {
   const handleGetStartedClick = () => {
     setShowProductList(true);
     // Reset the view to show products
-    if (window.location.pathname !== '/') {
+    if (window.location.pathname !== '/e-plantShopping') {
       window.history.pushState({}, '', '/');
     }
   };
