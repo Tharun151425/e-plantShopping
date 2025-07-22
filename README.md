@@ -2,6 +2,10 @@
 
 A modern, responsive e-commerce website for plant shopping built with React and Vite. Experience the beauty of nature with our carefully curated collection of indoor and outdoor plants.
 
+# e-Plant Shopping Website is Live! 🌱
+
+[![Live Website](https://img.shields.io/badge/Live%20Website-Click%20Here-brightgreen?style=for-the-badge&logo=google-chrome)](https://tharun151425.github.io/e-plantShopping/)
+
 ## 🌱 Features
 
 - **Responsive Design**: Fully responsive interface that works seamlessly across all devices
@@ -40,6 +44,8 @@ npm install
 ```bash
 npm run dev
 ```
+
+5. Or try out hosted website : https://tharun151425.github.io/e-plantShopping/
 
 ## 🎯 Usage
 
